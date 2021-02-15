@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
          validates :user_name, presence: true
          validates :password_confirmation, presence: true
+
+         has_many :trainings
 end
