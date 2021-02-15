@@ -1,0 +1,10 @@
+<h1>トレーニング記録一覧ページ</h1>
+
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<%= link_to "トレーニング記録投稿", trainings_path %>
+<%= link_to "トレーニングお悩み相談室", trainings_path %>
+
+<% @trainings.each do |training| %>
+  <%= training.title %>
+  <%= training.user.user_name %>
+<% end %>
