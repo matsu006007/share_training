@@ -1,24 +1,70 @@
-# README
+## users テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column    | Type      | Option      |
+| --------- | --------- | ----------- |
+| user_name | string    | null: false |
+| email     | string    | null: false |
+| password  | string    | null: false |
 
-Things you may want to cover:
+### Association
 
-* Ruby version
+- has_many :trainings
+- has_many :training_comments
+- has_many :troubles
+- has_many :trouble_comments
 
-* System dependencies
 
-* Configuration
+## trainings テーブル
 
-* Database creation
+| Column    | Type       | Option            |
+| --------- | ---------- | ----------------- |
+| title     | string     | nill: false       |
+| content   | text       | nill: false       |
+| user      | references | foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :user
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## training_comments テーブル
 
-* ...
+| Column     | Type       | Option            |
+| ---------- | ---------- | ----------------- |
+| train_text | text       | null: false       |
+| user       | references | foreign_key: true |
+| training   | references | foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :training
+
+
+## troubles テーブル
+
+| Column                | Type       | Option            |
+| --------------------- | ---------- | ----------------- |
+| troubles_title        | string     | null: false       |
+| troubles_content      | text       | null: false       |
+| troubles_data_id      | string     | null: false       |
+| another_troubles_data | string     | null: false       |
+| user                  | references | foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+
+## trouble_comments テーブル
+
+| Column       | Type       | Option            |
+| ------------ | ---------- | ----------------- |
+| trouble_text | text       | null: false       |
+| user         | references | foreign_key: true |
+| trouble      | references | foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :trouble
