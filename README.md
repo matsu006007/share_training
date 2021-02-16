@@ -45,10 +45,10 @@
 
 | Column                | Type       | Option            |
 | --------------------- | ---------- | ----------------- |
-| troubles_title        | string     | null: false       |
-| troubles_content      | text       | null: false       |
-| troubles_data_id      | string     | null: false       |
-| another_troubles_data | string     | null: false       |
+| trouble_title         | string     | null: false       |
+| trouble_content       | text       | null: false       |
+| trouble_data_id       | string     | null: false       |
+| another_trouble       | string     | null: false       |
 | user                  | references | foreign_key: true |
 
 ### Association
