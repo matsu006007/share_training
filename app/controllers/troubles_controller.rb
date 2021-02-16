@@ -14,6 +14,10 @@ class TroublesController < ApplicationController
     redirect_to troubles_path
   end
 
+  def show
+    @trouble = Trouble.find(params[:id])
+  end
+
   private
 
   def trouble_params
