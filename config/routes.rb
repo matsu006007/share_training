@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root "top#index"
 
   resources :trainings, only: [:index, :new, :create, :show]
-  resources :troubles, only: [:index, :new, :create]
+  resources :troubles, only: [:index, :new, :create, :show]
 end
