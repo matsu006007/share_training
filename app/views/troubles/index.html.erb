@@ -8,5 +8,5 @@
 <% @troubles.each do |trouble| %>
   <%= trouble.trouble_title %>
   <%= trouble.user.user_name %>
-  <%= link_to "詳しく見る", training_path(trouble.user_id)%>
+  <%= link_to "詳しく見る", trouble_path(trouble.user_id)%>
 <% end %>
