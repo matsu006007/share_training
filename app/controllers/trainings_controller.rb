@@ -14,6 +14,10 @@ class TrainingsController < ApplicationController
     redirect_to trainings_path
   end
 
+  #def show
+    #@training = Training.find(params[:id])
+  #end
+
   private
 
   def training_params
