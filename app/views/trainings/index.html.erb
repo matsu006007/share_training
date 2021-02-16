@@ -7,5 +7,5 @@
 <% @trainings.each do |training| %>
   <%= training.title %>
   <%= training.user.user_name %>
-  <%#<%= link_to "詳しく見る", training_path(training.user_id)%>
+  <%= link_to "詳しく見る", training_path(training.user_id)%>
 <% end %>
