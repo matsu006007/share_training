@@ -2,7 +2,7 @@
 
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 <%= link_to "トレーニング記録を投稿", new_training_path %>
-<%= link_to "お悩み相談室に入る", trainings_path %>
+<%= link_to "お悩み相談室に入る", troubles_path %>
 
 <% @trainings.each do |training| %>
   <%= training.title %>
