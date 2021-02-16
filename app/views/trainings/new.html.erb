@@ -1,0 +1,10 @@
+<h1>トレーニング記録投稿ページ</h1>
+
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<%= link_to "トレーニング記録一覧へ戻る", trainings_path %>
+
+<%= form_with model: @training, local: true do |f| %>
+  <%= f.text_field :title, placeholder: "タイトル" %>
+  <%= f.text_area :content, placeholder: "記録内容" %>
+  <%= f.submit "投稿" %>
+<% end %>
