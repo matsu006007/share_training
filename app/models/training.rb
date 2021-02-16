@@ -1,7 +1,8 @@
 class Training < ApplicationRecord
-
-  validates :title,           presence: true
-  validates :content,         presence: true
+  with_options presence: true do
+    validates :title
+    validates :content
+  end
 
   belongs_to :user
 end

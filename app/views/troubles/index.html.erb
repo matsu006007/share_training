@@ -1,0 +1,12 @@
+<h1>お悩み相談室</h1>
+
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<%= link_to "自分の悩みを投稿する", trainings_path %>
+<%= link_to "トレーニング記録一覧へ戻る", trainings_path %>
+
+<h2>みんなの悩み</h2>
+<% @troubles.each do |trouble| %>
+  <%= trouble.title %>
+  <%= trouble.user.user_name %>
+  <%= link_to "詳しく見る", training_path(trouble.user_id)%>
+<% end %>
