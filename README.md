@@ -47,8 +47,6 @@
 | --------------------- | ---------- | ----------------- |
 | trouble_title         | string     | null: false       |
 | trouble_content       | text       | null: false       |
-| trouble_data_id       | string     | null: false       |
-| another_trouble       | string     | null: false       |
 | user                  | references | foreign_key: true |
 
 ### Association
