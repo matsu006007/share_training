@@ -1,0 +1,9 @@
+<h1>お悩み詳細ページ</h1>
+
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<%= link_to "お悩み相談室へ戻る", troubles_path %>
+
+<<div class="content">
+  <p><%= @trouble.trouble_title %></p>
+  <p><%= @trouble.trouble_content %></p>
+</div>
