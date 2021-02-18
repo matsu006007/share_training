@@ -113,7 +113,7 @@ ShareTrainingは日々のトレーニングを記録し、共有することが�
 
 <!-- ![ER図](https://www.google.com/url?sa=i&url=https%3A%2F%2Fjapan-web-magazine.com%2Fdelicious-Miyagi-food-Miyagi-local-cuisine&psig=AOvVaw3_CjBYmrDWS0oUwJmbVV2Y&ust=1613731237068000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJD-mLyf8-4CFQAAAAAdAAAAABAD) -->
 
-<img src="sharetraining_ER.png" alt="test" title="サンプル">
+<img src="/Users/matsumurakazuya/portfolio/share_training/app/assets/images/sharetraining_ER.png" alt="test" title="サンプル">
 ## 作成の背景
 
 私は今まで筋トレやランニングを行ってきましたが、トレーニングを継続させることの難しさを感じていました。  
