@@ -111,7 +111,7 @@ ShareTrainingは日々のトレーニングを記録し、共有することが�
 
 ## データベース設計
 
-Markdown:![ER図](https://drive.google.com/file/d/1fnOWSuQzhM0oW1xKVguzfBQQxRZB3RAO/view?usp=sharing)
+Markdown:![ER図](/Users/matsumurakazuya/portfolio/share_training/app/assets/images/sharetraining_ER.png)
 
 ## 作成の背景
 
