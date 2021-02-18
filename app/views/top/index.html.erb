@@ -39,54 +39,49 @@
           font-size: 3.5rem;
         }
       }
+
+      .nav-item{
+        margin-left: 20px;
+      }
+
+      .container{
+        margin-top: 50px;
+      }
+
+      
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
   </head>
-  <body>
-    
+
+<body>
+<header>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">ナビゲーションバー</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="#">ホーム</a>
+          <button type="button" class="btn btn-light" onclick="location.href='/users/sign_up'">サインイン</button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">リンク</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">無効</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">ドロップダウン</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">アクション</a></li>
-            <li><a class="dropdown-item" href="#">その他のアクション</a></li>
-            <li><a class="dropdown-item" href="#">その他</a></li>
-          </ul>
+        <li class="nav-item ">
+          <button type="button" class="btn btn-light" onclick="location.href='/users/sign_in'">ログイン</button>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="検索" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
+</header>
 
 <main class="container">
-
-  <div class="starter-template text-center mt-5 py-5 px-3">
-    <p class="display-1">Share Training</p>
-    <p class="lead">日々のトレーニングをアウトプットしましょう<br> 継続は人間を変えます</p>
+  <div class="jumbotron" style="background:url(images/glenn.jpg); background-size:cover;">
+    <div class="containeer">
+      <div class="starter-template text-center mt-5 py-5 px-3">
+        <p class="display-1">Share Training</p>   
+        <p class="lead"><button type="button" class="btn btn-warning w-50 pt-3 pb-3" onclick="location.href='/users/sign_up'">Sign in</button></p>
+      </div>
+    </div>
   </div>
 
 </main><!-- /.container -->
@@ -94,12 +89,6 @@
 
     <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-      
-  </body>
+
+</body>
 </html>
-
-
-<h1>トップページ</h1>
-
-<%= link_to "ログイン", new_user_session_path %>
-<%= link_to "サインイン", new_user_registration_path %>
