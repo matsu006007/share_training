@@ -45,6 +45,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
        .container{
@@ -53,6 +54,11 @@
 
        .lead-btn{
          margin-top: 100px;
+       }
+
+       footer{
+         position: absolute;
+         bottom: 0; 
        }
     </style>
 
@@ -67,16 +73,16 @@
     <div>
       <h3 class="float-md-start mb-0">Cover</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" href="#">ログイン</a>
-        <a class="nav-link" href="#">サインイン</a>
+        <a class="nav-link" href="/users/sign_in">ログイン</a>
+        <a class="nav-link" href="/users/sign_up">サインイン</a>
       </nav>
     </div>
   </header>
 
   <main class="px-3">
   <div class="container">
-    <p class="display-1">Share Training</p>   
-    <p class="lead">いつものトレーニングを仲間達と更に良いものにしましょう。</p>
+    <p class="display-1 ">Share Training</p>   
+    <p class="lead ">いつものトレーニングを仲間達と更に良いものにしましょう。</p>
     <p class="lead-btn">
       <p class="lead"><button type="button" class="btn btn-warning w-50 pt-3 pb-3" onclick="location.href='/users/sign_up'">Sign in</button></p>
     </p>
@@ -84,7 +90,7 @@
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
   </footer>
 </div>
 
