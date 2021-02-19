@@ -56,5 +56,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'pry-rails'
+#Bootstrap
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem 'jquery-rails'
+gem 'devise-bootstrap-views', '~> 1.0'
+# 日本語化させるためのGem
+gem 'rails-i18n'
+gem 'devise-i18n'
